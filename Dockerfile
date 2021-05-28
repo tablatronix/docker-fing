@@ -9,7 +9,7 @@ RUN apt-get update -qq && \
     curl -O ${FING_ARCHIVE_URL} && \
     unzip $(basename ${FING_ARCHIVE_URL}) && \
     ls -la && \
-    dpkg -i /tmp/fing-download/fing-*-amd64.deb && \
+    dpkg -i /tmp/fing-download/fing-*-arm64.deb && \
     rm -rf /tmp/fing-download && \
     rm -rf /var/lib/apt/lists/*
 
